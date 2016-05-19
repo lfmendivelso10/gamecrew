@@ -1,0 +1,121 @@
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img width="120" height="30" src="/assets/logo.png" alt="Gamecrew-Logo" /></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <%= link_to 'Para Jugadores', landing_jugador_url %>
+        </li>
+        <li>
+          <%= link_to 'Para Canchas', landing_canchas_url %>
+        </li>
+        <li>
+          <%= link_to 'Para Cazatalentos', landing_cazatalentos_url %>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+
+<!-- Image Background Page Header -->
+<!-- Note: The background image is set within the business-casual.css file. -->
+<header class="business-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="tagline">Arma, juega y conecta tu pasión.</h1>
+        <h4 class="tagline">Cuando un deporte nos apasiona no hay nada mejor que compartir, vivir, disfrutar y crecer a
+          través de él.</h4>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+  <hr>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>¿Qué es GameCrew?</h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j1D6AQLtKzM" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-sm-6 center">
+      <h3>Registrate y disfruta de los beneficios que ofrece GameCrew para ti</h3>
+      <form class="form-signin">
+        <label for="inputEmail" class="sr-only">Correo Electrónico</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Ingrese aquí su correo" required autofocus>
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Ingrese aquí su contraseña" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Recordar mi sesión
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+
+      </form>
+      <hr>
+      <a class="btn btn-block btn-social btn-lg btn-facebook"><span class="fa fa-facebook"></span> Ingresar con Facebook</a>
+      <a class="btn btn-block btn-social btn-lg btn-twitter"><span class="fa fa-twitter"></span> Ingresar con Twitter</a>
+      <a class="btn btn-block btn-social btn-lg btn-google"><span class="fa fa-google-plus"></span> Ingresar con Google+</a>
+    </div>
+  </div>
+</div>
+<!-- /.row -->
+
+<hr>
+
+<div class="row">
+  <div class="col-sm-4 text-center">
+    <img class="img-circle img-responsive img-center" width="300" height="300" src="/assets/gamecrew-player.jpg" alt="">
+    <h2>Jugador</h2>
+    <p>Conoce más de cerca los beneficios que te ofrece GameCrew como
+      jugador. <%= link_to 'Ver información', landing_jugador_url %></p>
+  </div>
+  <div class="col-sm-4 text-center">
+    <img class="img-circle img-responsive img-center" width="300" height="300" src="assets/gamecrew-cancha.jpg" alt="">
+    <h2>Canchas</h2>
+    <p>Conoce más acerca de los beneficios te ofrece como Administrador
+      o Dueño de Canchas de fútbol sintético. <%= link_to 'Ver información', landing_canchas_url %></p>
+  </div>
+  <div class="col-sm-4 text-center">
+    <img class="img-circle img-responsive img-center" width="300" height="300" src="assets/gamecrew-cazatalentos.jpg" alt="">
+    <h2>Cazatalentos</h2>
+    <p>Conoce más acerca de los beneficios te ofrece como buscador de nuevas promesas del fútbol.
+      <%= link_to 'Ver información', landing_cazatalentos_url %></p>
+  </div>
+</div>
+<!-- /.row -->
+
+<hr>
+
+<!-- Footer -->
+<footer>
+  <div class="row text-center">
+    <div class="col-lg-12">
+      <p>Copyright &copy; GameCrew. 2016.</p>
+    </div>
+  </div>
+  <!-- /.row -->
+</footer>
+
+</div>
+
+
